@@ -25,7 +25,6 @@ export const Favorite = () => {
 
   const favoriteContacts = allContacts.filter(item => item.isFavorite === true);
   useEffect(() => {
-    console.log('dispach');
     dispatch(getContacts());
   }, [dispatch]);
 
@@ -59,8 +58,7 @@ export const Favorite = () => {
     dispatch(addToRecentlyDailed(info));
     console.log('add recently');
   };
-  console.log(allContacts);
-  console.log(favoriteContacts);
+
   return (
     <>
       <h2 className={css.favorite_list_title}>Favorite</h2>

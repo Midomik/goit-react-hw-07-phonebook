@@ -14,7 +14,6 @@ export const ContactList = () => {
   const dispatch = useDispatch();
   const contacts = useSelector(mainContacts).items;
   const filter = useSelector(contactsFilter);
-  console.log(contacts);
 
   const visibleContacts = () => {
     const listByName = contacts.filter(item =>
@@ -31,7 +30,6 @@ export const ContactList = () => {
     return filter === '' ? contacts : generalList;
   };
 
-  console.log(contacts);
   useEffect(() => {
     dispatch(getContacts());
   }, [dispatch]);

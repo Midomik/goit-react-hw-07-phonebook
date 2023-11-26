@@ -7,7 +7,6 @@ import { IconCall, IconLike, IconTrash } from 'components/assets/sprite';
 import { addToRecentlyDailed } from 'redux/recentlyDailed/recentlyDailed.reducer';
 
 export const ContactItem = ({ name, number, id, isFavorite }) => {
-  console.log(id);
   const dispatch = useDispatch();
 
   const removeItem = del_id => {

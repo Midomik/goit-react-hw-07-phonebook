@@ -1,0 +1,11 @@
+.control_element_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recently_list_title {
+  font-size: 30px;
+
+  text-align: center;
+  color: rgb(255, 215, 123);
+}

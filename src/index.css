@@ -13,3 +13,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.shared_layout_item_link {
+  margin-left: 30px;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 8px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: rgb(185, 177, 177);
+  border-color: transparent;
+
+  transition: all 0.6s;
+}
+.shared_layout_item_link:hover {
+  border-radius: 25px;
+  border: 1px solid rgb(243, 148, 23);
+}
+
+.shared_layout_item_link.active {
+  background-color: rgb(95, 96, 119);
+  border: 2px solid rgb(243, 148, 23);
+}

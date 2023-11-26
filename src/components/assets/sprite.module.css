@@ -1,0 +1,36 @@
+.icon_call {
+  width: 40px;
+  height: 40px;
+  stroke: transparent;
+  transition: all 0.6s;
+}
+
+.icon_call:hover {
+  width: 45px;
+  height: 45px;
+  stroke: black;
+}
+
+.icon_like {
+  width: 40px;
+  height: 40px;
+  transition: all 0.6s;
+}
+
+.icon_like:hover {
+  width: 45px;
+  height: 45px;
+}
+
+.icon_trash {
+  width: 40px;
+  height: 40px;
+  stroke: transparent;
+  transition: all 0.6s;
+}
+
+.icon_trash:hover {
+  width: 45px;
+  height: 45px;
+  stroke: black;
+}

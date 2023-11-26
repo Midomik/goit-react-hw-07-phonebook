@@ -1,0 +1,11 @@
+.main_container {
+  background-image: url('./assets/background.jpg');
+
+  background-size: cover;
+  min-height: 100vh;
+}
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}

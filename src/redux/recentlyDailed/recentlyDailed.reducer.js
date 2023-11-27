@@ -17,14 +17,14 @@ export const addToRecentlyDailed = createAsyncThunk(
   'recentlyDailed/add_to_recently_dailed',
   async (contact_info, thunkApi) => {
     try {
-      await axios.post(`recently_dailed`, {
+      const { data } = await axios.post(`recently_dailed`, {
         recectlyItemInfo: contact_info,
         recentlyItemTime: `${
           new Date().getUTCHours() + 2
         }:${new Date().getUTCMinutes()}`,
       });
 
-      return contact_info;
+      return data;
     } catch (error) {
       return thunkApi.rejectWithValue(error.message);
     }
